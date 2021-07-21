@@ -1,15 +1,17 @@
+/* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
 // import Slider from 'react-slick';
 import logo from '../../assets/logo.svg';
 import restaurante from '../../assets/restaurante-fake.png';
-import { Card, RestaurantCard } from '../../components';
-// eslint-disable-next-line import/named
+import { Card, RestaurantCard, Modal } from '../../components';
 import { Wrapper, Container, Carousel, Search, Logo, Map, CarouselTitle } from './styles';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
+  const [modalOpened, setModalOpened] = useState(false);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -41,10 +43,12 @@ const Home = () => {
             <Card photo={restaurante} title="nome 1" />
             <Card photo={restaurante} title="nome 1" />
           </Carousel>
+          {/* <button onClick={() => setModalOpened(true)}>Abrir Modal</button> */}
         </Search>
         <RestaurantCard />
       </Container>
       <Map />
+      <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)} />
     </Wrapper>
   );
 };
