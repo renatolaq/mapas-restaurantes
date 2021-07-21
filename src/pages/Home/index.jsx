@@ -4,7 +4,7 @@ import MaterialIcon from '@material/react-material-icon';
 // import Slider from 'react-slick';
 import logo from '../../assets/logo.svg';
 import restaurante from '../../assets/restaurante-fake.png';
-import { Card } from '../../components';
+import { Card, RestaurantCard } from '../../components';
 // eslint-disable-next-line import/named
 import { Wrapper, Container, Carousel, Search, Logo, Map, CarouselTitle } from './styles';
 
@@ -42,6 +42,7 @@ const Home = () => {
             <Card photo={restaurante} title="nome 1" />
           </Carousel>
         </Search>
+        <RestaurantCard />
       </Container>
       <Map />
     </Wrapper>
