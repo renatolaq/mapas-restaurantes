@@ -17,8 +17,8 @@ const Home = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
   };
   return (
     <Wrapper>
