@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import logo from '../../assets/logo.svg';
 import restaurante from '../../assets/restaurante-fake.png';
 import { Card } from '../../components';
@@ -33,13 +33,13 @@ const Home = () => {
           </TextField>
           <CarouselTitle>Na sua área</CarouselTitle>
           <Carousel {...settings}>
-            <Card photo={restaurante} />
-            <Card photo={restaurante} />
-            <Card photo={restaurante} />
-            <Card photo={restaurante} />
-            <Card photo={restaurante} />
-            <Card photo={restaurante} />
-            <Card photo={restaurante} />
+            <Card photo={restaurante} title="nome 1" />
+            <Card photo={restaurante} title="nome 1" />
+            <Card photo={restaurante} title="nome 1" />
+            <Card photo={restaurante} title="nome 1" />
+            <Card photo={restaurante} title="nome 1" />
+            <Card photo={restaurante} title="nome 1" />
+            <Card photo={restaurante} title="nome 1" />
           </Carousel>
         </Search>
       </Container>
