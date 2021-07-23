@@ -5,8 +5,8 @@ import MaterialIcon from '@material/react-material-icon';
 // import Slider from 'react-slick';
 import logo from '../../assets/logo.svg';
 import restaurante from '../../assets/restaurante-fake.png';
-import { Card, RestaurantCard, Modal } from '../../components';
-import { Wrapper, Container, Carousel, Search, Logo, Map, CarouselTitle } from './styles';
+import { Card, RestaurantCard, Modal, Map } from '../../components';
+import { Container, Carousel, Search, Logo, CarouselTitle, Wrapper } from './styles';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
